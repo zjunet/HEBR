@@ -85,7 +85,7 @@ optional arguments:
                         value is 256
 ```
 ## Reference
-[1] Wenjie, H; Yang, Y; Jianbo, W; Xuanwen, H and Ziqiang, C, 2020, [Understanding Electricity-Theft Behavior via Multi-Source Data](), In WWW, 2020 
+[1] Wenjie, H; Yang, Y; Jianbo, W; Xuanwen, H and Ziqiang, C, 2020, [Understanding Electricity-Theft Behavior via Multi-Source Data](https://dl.acm.org/doi/10.1145/3366423.3380291), In WWW, 2020 
 
 ```
  @inproceedings{hu2020theft, 
