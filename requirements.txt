@@ -1,0 +1,5 @@
+numpy>=1.15.0
+tensorflow-gpu>=1.2.0
+xgboost>=0.72
+sklearn>=0.21.2
+pandas>=0.23.1
