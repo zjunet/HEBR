@@ -138,16 +138,21 @@ def establishDataset(datax, starttime, endtime):
     tempx = np.nan_to_num(tempx)
     return tempx
 
+def dataprocessing(path):
 
-if __name__ == '__main__':
-    ntldata = loadNTL('../repo/data/hangzhou/ntl.csv')
-    userdata = loadUser('../repo/data/hangzhou/user.csv')
-    tempdata = loadTemperature('../repo/data/hangzhou/weather_33401.csv')
+    ntldata = loadNTL(os.path.join(path, 'ntl.csv'))
+    userdata = loadUser(os.path.join(path, 'user.csv'))
+    tempdata = loadTemperature(os.path.join(path, 'weather_33401.csv'))
 
     datax, datainfo = abstractData(userdata, ntldata, tempdata)
     data = establishDataset(datax, starttime='2019-6-1', endtime='2019-12-1')
 
-    np.save('../repo/data/hangzhou/datax.npy', data)
-    np.save('../repo/data/hangzhou/datainfo.npy', datainfo)
+    np.save(os.path.join(path, 'data.npy'), data)
+    np.save(os.path.join(path, 'datainfo.npy'), datainfo)
 
     print(data.shape, np.shape(datainfo))
+
+
+# test
+if __name__ == '__main__':
+    dataprocessing('../repo/data/hangzhou')

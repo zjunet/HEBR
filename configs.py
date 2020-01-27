@@ -2,8 +2,8 @@
 
 
 class BasicParam(object):
-    save_path = './repo/model/'
-    data_name = 'to2019'
+    save_path = './repo/'
+    data_path = './data/'
     his_len = 180
     n_event = 2
     n_jobs = 40
@@ -24,4 +24,5 @@ class BasicParam(object):
             'user_area_climate_hidden': 256}
     learning_rate = 0.001
     batch_size = 1500
+    epoch = 100
 
