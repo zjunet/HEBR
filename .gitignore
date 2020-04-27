@@ -11,15 +11,11 @@ __pycache__/
 
 # other file extensions
 *.xml
-*.csv
-*.pdf
 *.gz
 *.npy
 *.log
-*.png
-*.xlsx
 
-/data
+
 /.idea
 /Repo
 
